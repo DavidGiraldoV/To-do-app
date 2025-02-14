@@ -1,6 +1,9 @@
-prepare
-list
-study
-clean
+Read messages
+Review to-dos
+Buy groceries
+Clean
 Clean bedroom
 Master python
+Create
+My newest to-do is added
+Take the car to the shop
