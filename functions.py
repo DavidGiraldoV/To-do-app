@@ -1,7 +1,7 @@
 FILEPATH = "todos.txt"
 
 
-def open_file(filepath=FILEPATH):
+def get_todos(filepath=FILEPATH):
     """Opens files as a local file for manipulation
     """
     with open(filepath, 'r') as file_local:

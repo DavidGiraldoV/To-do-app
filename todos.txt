@@ -2,3 +2,5 @@ prepare
 list
 study
 clean
+Clean bedroom
+Master python

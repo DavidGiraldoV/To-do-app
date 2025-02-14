@@ -24,7 +24,7 @@ while True:
         # with open('todos.txt', 'r') as file:
         #    todos = file.readlines()
 
-        todos = funct.open_file()
+        todos = funct.get_todos()
 
         todos.append(todo)
 
@@ -34,7 +34,7 @@ while True:
 # keeping just one "if" makes the program faster, as the other "if"s are not executed unless the first iff is not matched.
 
     elif user_action.startswith("show"):
-        todos = funct.open_file()
+        todos = funct.get_todos()
 
         # Remove list backspace and leave only the default backspace the for method has:
         # new_todos = []
@@ -54,7 +54,7 @@ while True:
             # older version:  number = int(input("Number of the to-do you want to edit: "))-1
             number = int(user_action[5:])-1
 
-            todos = funct.open_file()
+            todos = funct.get_todos()
 
             new_todo = input("Enter new to-do: ")
             todos[number] = new_todo + "\n"
@@ -69,7 +69,7 @@ while True:
         try:
             number = int(user_action[9:])-1
 
-            todos = funct.open_file()
+            todos = funct.get_todos()
 
             to_be_removed = todos[number].strip("\n")
             todos.pop(number)
